@@ -1,4 +1,4 @@
-# AdaptiveSystemAnalysis
+# Adaptive System Analysis
 
 This repository contains the implementation of our framework for the analysis of COP/Adaptive systems.
 
