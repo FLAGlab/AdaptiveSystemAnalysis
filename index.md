@@ -6,7 +6,7 @@ This online appendix presents the complete evaluation results for our work on po
 
 Currently we evaluate the precision, recall and performance of four COP programs extracted from the literature.
 
-[greetings](./greetings.md)
-[shapes](./shapes.md)
-[video-encoder](./video.md)
+[greetings](./greetings.md) -
+[shapes](./shapes.md) -
+[video-encoder](./video.md) -
 [marks](./marks.md)
