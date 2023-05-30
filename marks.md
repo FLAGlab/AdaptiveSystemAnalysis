@@ -95,11 +95,15 @@ var marks = markus.printMarks();
 
 ## Precision and Recall
 
+We begin the analysis with calculating the points-to set for the `marks` variable. The baseline cannot detect the implementation of the marks method, and therefore has and `Unknonw` result. While our implementation we point to an array of marks, which we call `i4`.
+
+This array, should have only one instance (of the marks), while we detect three different instances `pts(i4[0]) = {Object (instance 1), Object (instance 2), Object (instance 3)}`. This may be explained by the 3 calls to the function `giveMarks` (one per student).
+
 | Analysis | Instances | True Positives | False Positives | False Negatives | Precision | Recall |
 | ---- | ---- | ---- | ---- | ---- | ---- | ---- |
-Baseline | 2 | 0 | 1 | 2 | 0 | 0
-Whole Program | 2 | 0 | 1 | 0 | 0  
-**Our** | 2 | 1 | 0 | 1 | **1** | **0.5**
+Baseline | 2 | 0 | 1 | 1 | 0 | 0
+Whole Program | 2 | 0 | 1 | 1 | 0  | 0  
+**Our** | 2 | 1 | 2 | 0 | **0.33** | **1**
 
 ## Performance
 
