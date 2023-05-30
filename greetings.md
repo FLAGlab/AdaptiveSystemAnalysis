@@ -6,26 +6,26 @@
 
 The program to evaluate is shown in the following
 
-```
+```js
 Person = {
   greetings: function() {
-	  return "Hello!"; 
+   return "Hello!"; 
   }
 };
 
 Spanish = new cop.Context(); 
 
 SpanishSpeaking = Trait({ 
-	greetings: function() {
-		return "Hola!";
-	} 
+ greetings: function() {
+  return "Hola!";
+ } 
 });
 
 French = new cop.Context(); 
 FrenchSpeaking = Trait({
-	greetings: function() {
-		return "Bonjour!"; 
-	}
+ greetings: function() {
+  return "Bonjour!"; 
+ }
 });
 
 Spanish.adapt(Person , SpanishSpeaking);
@@ -44,9 +44,9 @@ There are 2 contexts, `Spanish` and `French` to greet in the corresponding langu
 
 | Analysis | Instances | True Positives | False Positives | False Negatives | Precision | Recall |
 | ---- | ---- | ---- | ---- | ---- | ---- | ---- |
-Baseline | 3 | 1 | | 2 | | 0.33
-Whole Program | 3 | 1 | 2 | | 0.33
-**Our** | 3 | 3 | | 0 | | **1**
+Baseline | 3 | 1 | 0 | 2 | 1 | 0.33
+Whole Program | 3 | 1 | 0 | 2 | 1 | 0.33
+**Our** | 3 | 3 | 0 | 0 | 1 | **1**
 
 ## Performance
 
@@ -55,5 +55,5 @@ All times are shown in ms.
 | Analysis | No. of Nodes | No. of Edges | Processing time | Analysis time |
 | ---- | ---- | ---- | ---- | ---- |
 Baseline | 116 | 115 | 665 ± 25.4 | 398 ± 10.4
-Whole Program | 211 | 214 | 858 ± 25.5 | 539  18.6
+Whole Program | 211 | 214 | 858 ± 25.5 | 539 ± 18.6
 **Our** | 120 | 119 | 727 ± 29.9 | 321 ± 25.3
