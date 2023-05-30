@@ -20,6 +20,6 @@ All times are shown in ms.
 
 | Analysis | No. of Nodes | No. of Edges | Processing time | Analysis time |
 | ---- | ---- | ---- | ---- | ---- |
-Baseline | 116 | 115 | 665 ± 25.4 | 398 ± 10.4
-Whole Program | 211 | 214 | 858 ± 25.5 | 539  18.6
-**Our** | 120 | 119 | 727 ± 29.9 | 321 ± 25.3
+Baseline | 125 | 124 | 699 ± 10.7 | 391 ± 34.1
+Whole Program | 220 | 223 | 897 ± 28.6 | 567 ± 28
+**Our** | 131 | 130 | 791 ± 37.2 | 367 ± 17.4
